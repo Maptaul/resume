@@ -1,4 +1,5 @@
 import React from "react";
+import DownloadButton from "./DownloadButton";
 
 const ResumeSection = () => {
   // Separate data for education and job experience
@@ -93,9 +94,7 @@ const ResumeSection = () => {
 
         {/* Download CV Button */}
         <div className="text-center mt-12">
-          <button className="btn btn-primary bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600">
-            <span className="mr-2">📄</span> Download resume
-          </button>
+          <DownloadButton />
         </div>
       </div>
     </div>

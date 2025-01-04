@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import DownloadButton from "./DownloadButton";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -92,7 +93,7 @@ const Navbar = () => {
             {theme === "light" ? "🌙" : "☀️"}
           </button>
           <div className="flex items-center gap-4">
-            <button className="btn bg-orange-500">Download Resume</button>
+            <DownloadButton />
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookSquare, FaGithub, FaLinkedin } from "react-icons/fa";
+import DownloadButton from "./DownloadButton";
 
 const Banner = () => {
   return (
@@ -19,10 +20,9 @@ const Banner = () => {
           on every detail.Let's collaborate to bring your vision to life.Explore
           my portfolio and see how I can help you achieve your goals.
         </p>
-        <button className="btn btn-primary mt-6 px-6 py-3 rounded-md bg-orange-500 hover:bg-orange-600 text-white">
-          Download Resume
+        <button>
+          <DownloadButton />
         </button>
-        <div></div>
       </div>
 
       {/* Right Side Image */}

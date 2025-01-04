@@ -2,13 +2,14 @@ import React from "react";
 
 const DownloadButton = () => {
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
+    <div className="text-center mt-6">
       <a
-        href="/path-to-your-file/yourfile.pdf" // Replace with your file path or URL
-        download="YourFileName.pdf" // This sets the downloaded file's name
-        className="btn btn-primary text-white"
+        href="/public/Maptaul.pdf" // Ensure the file is in the 'public' directory of your React app
+        download="Maptaul.pdf" // Sets the name for the downloaded file
+        className="btn btn-primary px-6 py-3 rounded-md bg-orange-500 hover:bg-orange-600 text-white transition duration-300"
+        aria-label="Download CV"
       >
-        Download File
+        Download CV
       </a>
     </div>
   );
